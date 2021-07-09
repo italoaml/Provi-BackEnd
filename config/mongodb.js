@@ -2,7 +2,9 @@ const mongoose = require('mongoose')
 
 mongoose.Promise = global.Promise
 
-const url = 'mongodb://localhost/provi_db'
+// const url = 'mongodb://localhost/provi_db'
+const url = 'mongodb+srv://provi:provi@cluster0.4vsnt.mongodb.net/provi-db?retryWrites=true&w=majority'
+            //  mongodb+srv://realfisio:realfisioconnect@cluster0.vaavm.azure.mongodb.net/connect-realfisio?retryWrites=true&w=majority
 
 module.exports = app => {
     const con = new mongoose.Mongoose()
